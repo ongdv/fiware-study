@@ -1,0 +1,8 @@
+version: '3.3'
+services:
+    orion:
+        container_name: fiware-orion
+        network_mode: fiware_default
+        ports:
+            - '1026:1026'
+        image: fiware/orion

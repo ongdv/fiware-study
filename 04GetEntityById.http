@@ -1,0 +1,29 @@
+curl -G -X GET \
+   'http://localhost:1026/v2/entities/urn:ngsi-ld:Store:001?options=keyValues'
+
+
+# HTTP/1.1 200 OK
+# Connection: close
+# Content-Length: 269
+# Content-Type: application/json
+# Fiware-Correlator: bc30dc6a-9713-11ed-976c-0242ac120103
+# Date: Wed, 18 Jan 2023 09:37:33 GMT
+
+# {
+#   "id": "urn:ngsi-ld:Store:001",
+#   "type": "Store",
+#   "address": {
+#     "streetAddress": "Bornholmer Straße 65",
+#     "addressRegion": "Berlin",
+#     "addressLocality": "Prenzlauer Berg",
+#     "postalCode": "10439"
+#   },
+#   "location": {
+#     "type": "Point",
+#     "coordinates": [
+#       13.3986,
+#       52.5547
+#     ]
+#   },
+#   "name": "Bösebrücke Einkauf"
+# }

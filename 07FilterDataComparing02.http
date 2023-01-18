@@ -1,0 +1,31 @@
+curl -G -X GET \
+  'http://localhost:1026/v2/entities?type=Store&georel=near;maxDistance:1500&geometry=point&coords=52.5162,13.3777&options=keyValues'
+
+
+# HTTP/1.1 200 OK
+# Connection: close
+# Content-Length: 259
+# Content-Type: application/json
+# Fiware-Correlator: a0d12ab6-9717-11ed-ba2c-0242ac120103
+# Date: Wed, 18 Jan 2023 10:05:25 GMT
+
+# [
+#   {
+#     "id": "urn:ngsi-ld:Store:002",
+#     "type": "Store",
+#     "address": {
+#       "streetAddress": "Friedrichstraße 44",
+#       "addressRegion": "Berlin",
+#       "addressLocality": "Kreuzberg",
+#       "postalCode": "10969"
+#     },
+#     "location": {
+#       "type": "Point",
+#       "coordinates": [
+#         13.3903,
+#         52.5075
+#       ]
+#     },
+#     "name": "Checkpoint Markt"
+#   }
+# ]
