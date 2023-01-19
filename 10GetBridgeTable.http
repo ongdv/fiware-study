@@ -1,0 +1,16 @@
+curl -G -X GET \
+  'http://localhost:1026/v2/entities?q=refProduct==urn:ngsi-ld:Product:001&options=values&attrs=refStore&type=InventoryItem'
+
+
+# HTTP/1.1 200 OK
+# Connection: close
+# Content-Length: 27
+# Content-Type: application/json
+# Fiware-Correlator: 2a37191a-97d5-11ed-9053-0242ac120103
+# Date: Thu, 19 Jan 2023 08:42:11 GMT
+
+# [
+#   [
+#     "urn:ngsi-ld:Store:001"
+#   ]
+# ]

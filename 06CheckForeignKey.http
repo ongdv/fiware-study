@@ -1,0 +1,15 @@
+curl -G -X GET \
+  'http://localhost:1026/v2/entities/urn:ngsi-ld:Shelf:unit001?type=Shelf&options=values&attrs=refStore'
+
+
+
+# HTTP/1.1 200 OK
+# Connection: close
+# Content-Length: 25
+# Content-Type: application/json
+# Fiware-Correlator: 571d9d9c-97d4-11ed-be32-0242ac120103
+# Date: Thu, 19 Jan 2023 08:36:16 GMT
+
+# [
+#   "urn:ngsi-ld:Store:001"
+# ]

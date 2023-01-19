@@ -1,0 +1,24 @@
+curl -G -X GET \
+  'http://localhost:1026/v2/entities/urn:ngsi-ld:Shelf:unit001?type=Shelf&options=keyValues'
+
+#  HTTP/1.1 200 OK
+# Connection: close
+# Content-Length: 187
+# Content-Type: application/json
+# Fiware-Correlator: 2045f41a-97d7-11ed-8d7c-0242ac120103
+# Date: Thu, 19 Jan 2023 08:56:13 GMT
+
+# {
+#   "id": "urn:ngsi-ld:Shelf:unit001",
+#   "type": "Shelf",
+#   "location": {
+#     "type": "Point",
+#     "coordinates": [
+#       13.3986112,
+#       52.554699
+#     ]
+#   },
+#   "maxCapacity": 50,
+#   "name": "Corner Unit",
+#   "refStore": "urn:ngsi-ld:Store:001"
+# }

@@ -1,0 +1,34 @@
+curl -iX POST \
+  'http://localhost:1026/v2/entities' \
+  -H 'Cache-Control: no-cache' \
+  -H 'Content-Type: application/json' \
+  -H 'Postman-Token: 0588ef62-6b5c-4d1b-8066-172d63b516fd' \
+  -d '{
+    "id": "urn:ngsi-ld:InventoryItem:001", "type": "InventoryItem",
+    "refStore": {
+        "type": "Relationship",
+        "value": "urn:ngsi-ld:Store:001"
+    },
+    "refShelf": {
+        "type": "Relationship",
+        "value": "urn:ngsi-ld:Shelf:unit001"
+    },
+    "refProduct": {
+        "type": "Relationship",
+        "value": "urn:ngsi-ld:Product:001"
+    },
+    "stockCount":{
+        "type":"Integer", "value": 10000
+    },
+    "shelfCount":{
+        "type":"Integer", "value": 50
+    }
+}'
+
+
+# HTTP/1.1 201 Created
+# Connection: close
+# Content-Length: 0
+# Location: /v2/entities/urn:ngsi-ld:InventoryItem:001?type=InventoryItem
+# Fiware-Correlator: f6ccb526-97d4-11ed-9766-0242ac120103
+# Date: Thu, 19 Jan 2023 08:40:44 GMT

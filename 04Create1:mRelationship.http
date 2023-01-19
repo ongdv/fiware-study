@@ -1,0 +1,48 @@
+curl -iX POST \
+  'http://localhost:1026/v2/op/update' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "actionType":"APPEND",
+  "entities":[
+    {
+      "id":"urn:ngsi-ld:Shelf:unit001", "type":"Shelf",
+      "refStore": {
+        "type": "Relationship",
+        "value": "urn:ngsi-ld:Store:001"
+      }
+    },
+    {
+      "id":"urn:ngsi-ld:Shelf:unit002", "type":"Shelf",
+      "refStore": {
+        "type": "Relationship",
+        "value": "urn:ngsi-ld:Store:001"
+      }
+    },
+    {
+      "id":"urn:ngsi-ld:Shelf:unit003", "type":"Shelf",
+      "refStore": {
+        "type": "Relationship",
+        "value": "urn:ngsi-ld:Store:001"
+      }
+    },
+    {
+      "id":"urn:ngsi-ld:Shelf:unit004", "type":"Shelf",
+      "refStore": {
+        "type": "Relationship",
+        "value": "urn:ngsi-ld:Store:002"
+      }
+    },
+    {
+      "id":"urn:ngsi-ld:Shelf:unit005", "type":"Shelf",
+      "refStore": {
+        "type": "Relationship",
+        "value": "urn:ngsi-ld:Store:002"
+      }
+    }
+  ]
+}'
+
+# HTTP/1.1 204 No Content
+# Connection: close
+# Fiware-Correlator: 14caa7be-97d4-11ed-8e41-0242ac120103
+# Date: Thu, 19 Jan 2023 08:34:25 GMT

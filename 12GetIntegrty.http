@@ -1,0 +1,30 @@
+curl -G -X GET \
+  'http://localhost:1026/v2/entities?q=refStore==urn:ngsi-ld:Store:001&options=count&attrs=type'
+
+
+# HTTP/1.1 200 OK
+# Connection: close
+# Content-Length: 213
+# Content-Type: application/json
+# Fiware-Total-Count: 4
+# Fiware-Correlator: cd3652f2-97d5-11ed-b9b6-0242ac120103
+# Date: Thu, 19 Jan 2023 08:46:44 GMT
+
+# [
+#   {
+#     "id": "urn:ngsi-ld:Shelf:unit001",
+#     "type": "Shelf"
+#   },
+#   {
+#     "id": "urn:ngsi-ld:Shelf:unit002",
+#     "type": "Shelf"
+#   },
+#   {
+#     "id": "urn:ngsi-ld:Shelf:unit003",
+#     "type": "Shelf"
+#   },
+#   {
+#     "id": "urn:ngsi-ld:InventoryItem:001",
+#     "type": "InventoryItem"
+#   }
+# ]
