@@ -10,7 +10,7 @@ Docker Compose Version 2.5 이상
 
 ## Architecture
 
-![Untitled](/assets/architecture.png)
+![Project Architecture](/assets/architecture.png)
 
 fiware의 구성요소인 [Orion Context Broker](https://fiware-orion.readthedocs.io/en/latest/)를 사용
 
