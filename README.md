@@ -6,12 +6,18 @@ Docker Compose Version 2.5 이상
 환경에서 진행됨
 </aside>
 
-# Step01
+---
 
-## Architecture
+<aside>
+Step01에서 생성한 DB는 지속적으로 유지되므로 docker-compose에서 큰 변화가 없다면 mongoDB의 내용을 그대로 둔다.
+</aside>
 
-[![Project Architecture](/assets/architecture.png)](https://fiware-tutorials.readthedocs.io/en/1.0.0/getting-started/index.html)
+---
 
-fiware의 구성요소인 [Orion Context Broker](https://fiware-orion.readthedocs.io/en/latest/)를 사용
+# [1. Step01 Getting Started](https://github.com/ongdv/fiware-study/tree/01GettingStarted)
 
-Orion Context Broker가 보유하고 있는 Context 데이터의 지속성을 유지하기 위해 MongoDB를 사용
+fiware에서 제공하는 NGSIv2, NGSI-LD를 활용하여 Link Data를 관리 방법에 대한 실습
+
+# [2. Step02 Entity Relationship](https://github.com/ongdv/fiware-study/tree/02EntityRelationships)
+
+fiware를 통해 저장된 데이터들의 관계를 정의하고, 관계별 쿼리 방법 실습
